@@ -2,7 +2,7 @@ const router = require('express').Router();
 const db = require('./db');
 
 router.get('/users', (req,res,next)=>{
-  db.models.User.findAll({
+  db.models.User.findAll({ order: '"name" ASC',
     include: [ {
       model: db.models.User,
       as: 'manager'

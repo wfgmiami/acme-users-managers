@@ -9959,10 +9959,6 @@ var userList = function userList(containerId, users, managers, onPromote, onDemo
   var div = void 0;
   var options = [];
 
-  // const options = managers.map( manager => {
-  //   return `<option value="${manager.id}" data-type="${manager.id}">${manager.name}</option>`
-  // })
-
   users.forEach(function (user) {
 
     managers.forEach(function (manager) {

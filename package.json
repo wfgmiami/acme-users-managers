@@ -1,0 +1,25 @@
+{
+  "name": "acme_users_managers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "start:dev": "npm run webpack -- -w & DATABASE_URL=postgres://localhost/acme_users_managers nodemon --ignore dist/ --ignore src/ server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "jquery": "^3.2.0",
+    "pg": "^6.1.4",
+    "sequelize": "^3.30.2",
+    "webpack": "^2.2.1"
+  }
+}
